@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>registerServlet</servlet-name>
+        <servlet-class>com.servlet.registerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>com.servlet.loginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>buyCakeServlet</servlet-name>
+        <servlet-class>com.servlet.buyCakeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>paymentServlet</servlet-name>
+        <servlet-class>com.servlet.paymentServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>gotoHomeServlet</servlet-name>
+        <servlet-class>com.servlet.gotoHomeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EmailListServlet</servlet-name>
+        <servlet-class>murach.email.EmailListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EmailListServlet</servlet-name>
+        <url-pattern>/emailList</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>registerServlet</servlet-name>
+        <url-pattern>/registerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>buyCakeServlet</servlet-name>
+        <url-pattern>/buyCakeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>paymentServlet</servlet-name>
+        <url-pattern>/paymentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>gotoHomeServlet</servlet-name>
+        <url-pattern>/gotoHomeServlet</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
